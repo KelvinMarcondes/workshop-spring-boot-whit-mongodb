@@ -4,17 +4,17 @@ import java.io.Serializable;
 
 import com.kelvinmarcondes.workshopmongo.domain.User;
 
-public class authorDTO implements Serializable{
+public class AuthorDTO implements Serializable{
 	private static final long serialVersionUID = 1L;
 	
 	
 	private String id;
 	private String name;
 	
-	public authorDTO() {
+	public AuthorDTO() {
 	}
 
-	public authorDTO(User user) {
+	public AuthorDTO(User user) {
 		id = user.getId();
 		name = user.getName();
 	}
